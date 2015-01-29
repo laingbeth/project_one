@@ -31,7 +31,7 @@ class Listing
 
     def self.find(name)
       self.all.find do |restaurant|
-        restaurant.name == name
+        restaurant.name = name
       end
     end
 

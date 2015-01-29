@@ -1,5 +1,5 @@
 require 'sinatra'
-require_relative './model/listings'
+require_relative './model/listing'
 
 
 
@@ -12,6 +12,7 @@ get '/about' do
 end
 
 get '/restaurants' do 
+	@restaurants = Listing.all
 	erb :restaurants
 end	
 
