@@ -1,5 +1,5 @@
 require 'sinatra'
-require_relative './model/listings'
+require_relative './model/listing'
 
 
 
