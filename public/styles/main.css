@@ -1,0 +1,20 @@
+body {
+	background-color: rgb(192,192,192);
+	padding: 20px;
+		font-family: georgia;
+}
+
+p {
+	font-family: georgia;
+
+
+}
+
+h1 {
+text-align: center;
+}
+
+li {
+	list-style-type: none;
+	padding-left: 25px
+}
