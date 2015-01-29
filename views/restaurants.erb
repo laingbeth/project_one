@@ -1,16 +1,16 @@
-<h4>Here are the items in an unordered list</h4>
+
+
+<h4>Here are the restaurants</h4>
 <ul>
   <% @restaurants.each do |restaurant| %>
+
   <li>
-    <a href="restaurants/<%= restaurant.name %>">
- <span><%= restaurant.category %> - </span>
- <span><%= restaurant.price %> - </span>
- <span><%= restaurant.description %> - </span>
- <span><%= restaurant.recommender %> - </span>
- <span><%= restaurant.location %> - </span>
- <span><%= restaurant.best_dish %> - </span>
- <span><%= restaurant.website %> - </span>
-    </a>
+ <a href="restaurants/<%= restaurant.name %>">
+		<span><%= restaurant.category %> - </span>
+		<span><%= restaurant.price %> - </span>
+		<span><%= restaurant.description %> - </span>
+		<span><%= restaurant.recommender %> - </span>
+		
   </li>
   <% end %>
 </ul>
