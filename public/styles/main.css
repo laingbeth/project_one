@@ -8,10 +8,17 @@ body {
 
 p {
 	padding-left: 15px;
+	padding-right: 30px;
 	font-size: 14pt;
 }
-
-h1, h3, h2 {
+h1 {
+text-align: center;
+ontop
+}
+h4 {
+margin-left: 30px;
+}
+h3, h2 {
 text-align: center;
 }
 
@@ -27,4 +34,10 @@ ul {
 img {
 	align: center;
 	margin-left: 200px;
+}
+
+.jumbotron {
+	 background: url(/images/food.jpg);
+	 opacity: 0.15;
+
 }
