@@ -2,12 +2,12 @@ require_relative './restaurant'
 
 class Listing
 
-    attr_reader :description, :comments, :best_dish, :image
+    attr_reader :ID, :description, :comments, :best_dish, :image
     attr_reader :recommender, :category, :website, :location, :name, :price
 
   def self.all
     [
-      Restaurant.new(recommender: "Allyson",
+      Restaurant.new(ID: "010", recommender: "Allyson",
                category: "Mexican",
                name: "Plaza Fiesta Food Court",
                price: "$",
@@ -19,7 +19,7 @@ class Listing
                bread dipped in ranchero sauce, filled with chorizo sausage, 
                potatoes, lettuce, cheese & sour cream."
                ),
-       Restaurant.new(recommender: "Dave",
+       Restaurant.new(ID: "020", recommender: "Dave",
                category: "Home Cookin",
                name: "My Home",
                price: "$$",

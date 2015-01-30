@@ -1,5 +1,19 @@
 
 
+<h4>All Restaurants:</h4>
+<ul>
+  <% @restaurants.each do |restaurant| %>
+  <li>
+    <a href="restaurants/<%= restaurant.id %>">
+    	<span><strong><%= restaurant.name %></strong> ---- </span>
+      <span><%= restaurant.category %> - </span>
+      <span>$<%= restaurant.price %></span>
+    </a>
+  </li>
+  <% end %>
+</ul>
+
+
 <h4>Here are the restaurants</h4>
 <ul>
   <% @restaurants.each do |restaurant| %>

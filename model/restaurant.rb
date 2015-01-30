@@ -1,9 +1,10 @@
 class Restaurant
 
-  attr_reader :price, :description, :comments, :best_dish
+  attr_reader :price, :description, :comments, :id, :best_dish
   attr_reader :recommender, :category, :location, :website, :name
   
   def initialize(args)
+    @id          = args[:id] 
     @recommender = args[:recommender]
     @category    = args[:category]
     @name        = args[:name]

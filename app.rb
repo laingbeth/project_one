@@ -29,3 +29,7 @@ get '/who' do
   erb :who
 end
 
+get '/restaurants/:id' do
+	@restaurant = Listing.find(params[:id].to_i)
+  erb :restaurant
+end
