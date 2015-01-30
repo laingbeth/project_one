@@ -1,12 +1,22 @@
-<h3><%= @restaurant.name %></h3>
-<p>Category: <%= @restaurant.category %></p>
-<p>Price: $<%= @restaurant.price %></p>
-<p>Description: <%= @restaurant.description %></p>
-<p>Recommender: <%= @restaurant.recommender %></p>
-<p>Location: <%= @restaurant.location %></p>
-<p>Website: <%= @restaurant.website %></p>
-<p>Best_dish: <%= @restaurant.best_dish %></p>
-<p> Image: <%= @restaurant.image %></p>
+
+<section class="container-fluid restaurant"
+<div class ="row">
+<h3 class='text-center'><%= @restaurant.name %></h3>
+<dl class='dl-horizantal'>
+		<dt> Category:</dt>
+ 		<dd><%= @restaurant.category %></dd>
+		<dt>Price:</dt> 
+		<dd>$<%= @restaurant.price %></dd>
+		<dt>Description:</dt>
+ 		<dd><%= @restaurant.description %></dd>
+		<dt>Recommender:</dt>
+ 		<dd><%= @restaurant.recommender %></dd>
+		<dt>Location:</dt> 
+		<dd><%= @restaurant.location %></dd>
+		<dt>Website:</dt></dd></p>
+		<dt>>Best_dish:</dt> 
+		<dd><%= @restaurant.best_dish %></dd>
+	
 
 
 
