@@ -12,6 +12,7 @@ get '/about' do
 end
 
 get '/restaurants' do 
+	@restaurants = Listing.all
 	erb :restaurants
 end	
 
