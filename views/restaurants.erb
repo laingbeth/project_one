@@ -5,7 +5,8 @@
   <% @restaurants.each do |restaurant| %>
 
   <li>
- <a href="restaurants/<%= restaurant.name %>">
+ 
+ 		<span><strong><%= restaurant.name %> ---- </strong></span>
 		<span><%= restaurant.category %> - </span>
 		<span><%= restaurant.price %> - </span>
 		<span><%= restaurant.description %> - </span>

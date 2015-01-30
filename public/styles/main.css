@@ -1,24 +1,27 @@
 body {
     background-color:#B0C4DE;
-    background-image: restaurant.png;
-    background-repeat:no-repeat;
+    background: url(/images/restaurant.png);
     background-position:top center;
     margin:0;
     padding:0;
 }
 
 p {
-	font-family: georgia;
-
+	padding-left: 15px;
+	font-size: 14pt;
 }
 
-h1 {
+h1, h3, h2 {
 text-align: center;
 }
 
 li {
 	list-style-type: none;
-	padding-left: 25px
+	padding-left: 25px;
+	font-size: 14pt;
+}
+ul {
+	padding-left: 15px;
 }
 
 img {

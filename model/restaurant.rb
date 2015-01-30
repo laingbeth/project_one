@@ -12,6 +12,7 @@ class Restaurant
     @best_dish   = args[:best_dish]
     @location    = args[:location]
     @website     = args[:website] 
+    @image       = args[:image]
   end
 
   def to_s

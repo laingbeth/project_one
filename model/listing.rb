@@ -2,7 +2,8 @@ require_relative './restaurant'
 
 class Listing
 
-    attr_reader :recommender, :category, :website, :location, :name, :price, :description, :comments, :best_dish
+    attr_reader :description, :comments, :best_dish, :image
+    attr_reader :recommender, :category, :website, :location, :name, :price
 
   def self.all
     [
@@ -16,7 +17,8 @@ class Listing
                website:  "http://www.plazafiesta.net/",
                description: "Legend tells of a sandwich made from torta 
                bread dipped in ranchero sauce, filled with chorizo sausage, 
-               potatoes, lettuce, cheese & sour cream." ),
+               potatoes, lettuce, cheese & sour cream."
+               ),
        Restaurant.new(recommender: "Dave",
                category: "Home Cookin",
                name: "My Home",
@@ -25,7 +27,8 @@ class Listing
                best_dish: "Scrambled eggs and toast",
                location: "1234 Buford Hwy Atlanta GA 30345",
                website:  "http://www.mykitchen.net/",
-               description: "We may not cook often but when we do it is really great." )
+               description: "We may not cook often but when we do it is really great."
+               )
     ]
   end
 
