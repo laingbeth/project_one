@@ -14,19 +14,3 @@
 </ul>
 
 
-<h4>Here are the restaurants</h4>
-<ul>
-  <% @restaurants.each do |restaurant| %>
-
-  <li>
- 
- 		<span><strong><%= restaurant.name %> ---- </strong></span>
-		<span><%= restaurant.category %>; </span>
-		<span><%= restaurant.description %> -- </span>
-		<span><%= restaurant.recommender %> </span>
-		
-  </li>
-  <% end %>
-</ul>
-
-<hr>

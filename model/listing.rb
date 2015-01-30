@@ -7,7 +7,7 @@ class Listing
 
   def self.all
     [
-      Restaurant.new(ID: "010", recommender: "Allyson",
+      Restaurant.new(id: 10, recommender: "Allyson",
                category: "Mexican",
                name: "Plaza Fiesta Food Court",
                price: "$",
@@ -19,7 +19,7 @@ class Listing
                bread dipped in ranchero sauce, filled with chorizo sausage, 
                potatoes, lettuce, cheese & sour cream."
                ),
-       Restaurant.new(ID: "020", recommender: "Dave",
+       Restaurant.new(id: 20, recommender: "Dave",
                category: "Home Cookin",
                name: "My Home",
                price: "$$",
@@ -32,9 +32,10 @@ class Listing
     ]
   end
 
-    def self.find(name)
+    def self.find(id)
+      puts "Looking for restaurant with id = #{id}"
       self.all.find do |restaurant|
-        restaurant.name = name
+        restaurant.id == id
       end
     end
 
