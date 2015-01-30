@@ -1,5 +1,6 @@
 <section class="containter-fluid restaurant">
 	<div class="row">
+
 		<h3><%= @restaurant.name %></h3>
 			<dl class='dl-horizantal'>
 				<dt> Category:</dt>
@@ -15,7 +16,12 @@
 		<dt>Website:</dt></dd></p>
 		<dt>>Best_dish:</dt> 
 		<dd><%= @restaurant.best_dish %></dd>
-		
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<div class="row">
+  <div class="col-xs-6 col-md-8"></div> 
+  <div class="col-xs-6 col-md-4"></div>
+</div>
+
 	
 
 
