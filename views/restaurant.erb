@@ -1,9 +1,9 @@
-<section class="containter-fluid restaurant">
-	<div class="row">
-
-		<h3><%= @restaurant.name %></h3>
-			<dl class='dl-horizantal'>
-				<dt> Category:</dt>
+<section class="container-fluid restaurant">
+ <div class="row">
+- <h3 class="text-center"><%= @restaurant.name %></h3>
+   <div class="col-sm-12 col-md-8 col-md-offset-2">
+   <dl class="dl-horizontal">
+		<dt> Category:</dt>
 		<dd><%= @restaurant.category %></dd>
 		<dt>Price:</dt> 
 		<dd>$<%= @restaurant.price %></dd>
@@ -13,17 +13,14 @@
 		<dd><%= @restaurant.recommender %></dd>
 		<dt>Location:</dt> 
 		<dd><%= @restaurant.location %></dd>
-		<dt>Website:</dt></dd></p>
-		<dt>>Best_dish:</dt> 
+		<dt>Website:</dt>
+		<dd><a href="http://<%= @restaurant.website %>"><%= @restaurant.website %></a></dd>
+		<dt>Best dish:</dt> 
 		<dd><%= @restaurant.best_dish %></dd>
-<!-- Stack the columns on mobile by making one full-width and the other half-width -->
-<div class="row">
-  <div class="col-xs-6 col-md-8"></div> 
-  <div class="col-xs-6 col-md-4"></div>
-</div>
+	</div>
 
-	
-
-
+	<div class="col-sm-12 col-md-4 item-image">
+      <img class="middle" width=200px src="/images/<%= @restaurant.image %>"/>
+    </div>
 
     
