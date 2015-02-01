@@ -19,6 +19,7 @@ text; ontop;
 h4 {
 margin-left: 20px;
 margin-top: 15px;
+margin-bottom: 20px;
 text-align: center;
 }
 
@@ -30,6 +31,10 @@ li {
 	list-style-type: none;
 	padding-left: 35px;
 	font-size: 14pt;
+}
+
+list ul{
+	font-size: 12px;	
 }
 
 ul {
