@@ -1,5 +1,6 @@
 require 'sinatra'
 require_relative './model/listing'
+require_relative './model/friend'
 
 get '/' do
   erb :home
@@ -14,8 +15,9 @@ get '/restaurants' do
   erb :restaurants
 end
 
-get '/who' do
-  erb :who
+get '/reviewers' do
+  @reviewers = Friend.all
+  erb :reviewers
 end
 
 get '/restaurants/:id' do
