@@ -10,26 +10,31 @@ p {
 	padding-right: 30px;
 	font-size: 14pt;
 }
+
 h1 {
 text-align: center;
 text; ontop;
 }
+
 h4 {
-margin-left: 30px;
+margin-left: 20px;
 margin-top: 15px;
 text-align: center;
 }
+
 h3, h2 {
 text-align: center;
 }
 
 li {
 	list-style-type: none;
-	padding-left: 25px;
+	padding-left: 35px;
 	font-size: 14pt;
 }
+
 ul {
 	padding-left: 15px;
+	margin-bottom: 10px;
 }
 
 
