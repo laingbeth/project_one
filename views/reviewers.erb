@@ -1,11 +1,10 @@
 
 <H4> Who is suggesting these places??!!!! </H4>
-<ul>
-  <% @reviewers.each do |reviewer| %>
-  <li>
-    	<span><strong><%= reviewer.name %></strong>,</span>
-      <span><%= reviewer.relation %>.</span>
-       
-  </li>
-  <% end %>
-</ul>
+	<ul>
+  	<% @reviewers.each do |reviewer| %>
+  		<li>
+    		<span><strong><%= reviewer.name %></strong>,</span>
+      	<span><%= reviewer.relation %>.</span> 
+  		</li>
+  	<% end %>
+	</ul>
