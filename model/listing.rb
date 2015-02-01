@@ -17,7 +17,7 @@ class Listing
                      description: "Legend tells of a sandwich made from torta
                bread dipped in ranchero sauce, filled with chorizo sausage,
                potatoes, lettuce, cheese & sour cream.",
-                      image: 'plaza_fiesta.jpeg'
+                     image: 'plaza_fiesta.jpeg'
                ),
       Restaurant.new(id: 20, recommender: 'Dave',
                      category: 'Home Cookin',
@@ -33,7 +33,6 @@ class Listing
   end
 
   def self.find(id)
-    puts "Looking for restaurant with id = #{id}"
     all.find do |restaurant|
       restaurant.id == id
     end
