@@ -13,7 +13,7 @@ class Friend
           who enjoys exploring Buford Hwy for good eats'),
       Reviewer.new( id: 30, name: 'Dave', relation: 'Miami raised but firmly rooted in
       	Atlanta and willing to try anything!' ),
-      Reviewer.new( id: 40, name: 'Alix', relation: 'young but adverturous eater; developing
+      Reviewer.new( id: 40, name: 'Alix', relation: 'young but adventurous eater; developing
       	world traveler' ),
       Reviewer.new( id: 50, name: 'Hannah', relation: 'likes checking out new places, even if
       	she is not going to eat anything there' ),
