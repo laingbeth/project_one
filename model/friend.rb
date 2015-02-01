@@ -20,7 +20,9 @@ class Friend
       Reviewer.new( id: 60, name: 'Sara', relation: 'interested in different cuisines and game
       						to try anything once!' ),
       Reviewer.new( id: 70, name: 'Andy', relation: 'interested in exploring various cultures
-      						through their menus' )
+      						through their menus' ),
+      Reviewer.new( id: 80, name: 'Bill', relation: 'came for Georgia Tech and still here... enjoying finding interesting places to eat'
+        )
     ]
   end
 
